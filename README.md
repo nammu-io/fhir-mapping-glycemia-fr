@@ -8,13 +8,11 @@ This repo is an example of how mapping data to FHIR format can be achieved. Foll
 2. Place the data you want to map in the repo as a CSV file. In this case we use data from blood gucose sensor in the InputGlycemiaRawdata.csv file
 
 3. Create a mapping:
-   Define a mapping from your CSV data to the FHIR resources. This could be a simple 1-to-1 mapping or more complex transformations depending on your data. In the mapping.py file you will find an example in python.
+   Define a mapping from your CSV data to the FHIR resources. This could be a simple 1-to-1 mapping or more complex transformations depending on your data. In the mapping.py file you will find an example in python. Create a folder output and modify the `mapping.py` script to define your specific mapping rules.
 
 4. Transform the data:
-   To use the `mapping.py` script:
-
-- Modify the `mapping.py` script to define your specific mapping rules.
-- Run the script using the command `python mapping.py`.
+   To use the `mapping.py`:
+   - Run the script using the command `python mapping.py`.
 
 The `mapping.py` script uses the mappings defined in the script to convert the CSV data into FHIR format.
 
